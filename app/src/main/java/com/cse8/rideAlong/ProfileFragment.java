@@ -43,7 +43,7 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        sharedPreferences = getContext().getSharedPreferences("com.codedesign.wearhelmetapp", Context.MODE_PRIVATE);
+        sharedPreferences = getContext().getSharedPreferences("com.cse8.rideAlong", Context.MODE_PRIVATE);
 
         firebaseAuth = FirebaseAuth.getInstance();
         userDob = view.findViewById(R.id.userDob);

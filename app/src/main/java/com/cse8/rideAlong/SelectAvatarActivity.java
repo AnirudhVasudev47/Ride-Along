@@ -26,7 +26,7 @@ public class SelectAvatarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_avatar);
 
-        sharedPreferences = getApplicationContext().getSharedPreferences("com.codedesign.wearhelmetapp", Context.MODE_PRIVATE);
+        sharedPreferences = getApplicationContext().getSharedPreferences("com.cse8.rideAlong", Context.MODE_PRIVATE);
 
         avatar1CheckBox = findViewById(R.id.avatar1Checkbox);
         avatar2CheckBox = findViewById(R.id.avatar2Checkbox);

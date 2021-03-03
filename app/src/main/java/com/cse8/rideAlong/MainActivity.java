@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sharedPreferences = getApplicationContext().getSharedPreferences("com.codedesign.wearhelmetapp", Context.MODE_PRIVATE);
+        sharedPreferences = getApplicationContext().getSharedPreferences("com.cse8.rideAlong", Context.MODE_PRIVATE);
         loadingClass = new LoadingClass(MainActivity.this);
         loadingClass.startLoadingDialog();
 
@@ -74,19 +74,19 @@ public class MainActivity extends AppCompatActivity {
         } else {
             loadingClass.stopDialog();
 
-//            ComponentName componentName = new ComponentName(getApplicationContext(), UpdateServerScheduler.class);
-//            JobInfo info = new JobInfo.Builder(JOB_SCHEDULE_ID, componentName)
-//                    .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
-//                    .setPersisted(true)
-//                    .setPeriodic(RESTART_SCHEDULE_TIME)
-//                    .build();
-//            JobScheduler scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
-//            int resultCode = scheduler.schedule(info);
-//            if (resultCode == JobScheduler.RESULT_SUCCESS) {
-//                Log.d(TAG, "Job scheduled");
-//            } else {
-//                Log.d(TAG, "Job scheduling failed");
-//            }
+            ComponentName componentName = new ComponentName(getApplicationContext(), UpdateServerScheduler.class);
+            JobInfo info = new JobInfo.Builder(JOB_SCHEDULE_ID, componentName)
+                    .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
+                    .setPersisted(true)
+                    .setPeriodic(RESTART_SCHEDULE_TIME)
+                    .build();
+            JobScheduler scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
+            int resultCode = scheduler.schedule(info);
+            if (resultCode == JobScheduler.RESULT_SUCCESS) {
+                Log.d(TAG, "Job scheduled");
+            } else {
+                Log.d(TAG, "Job scheduling failed");
+            }
         }
     }
 
