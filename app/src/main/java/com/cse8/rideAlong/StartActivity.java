@@ -57,9 +57,9 @@ public class StartActivity extends AppCompatActivity {
         agreeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent registerIntent = new Intent(getApplicationContext(), LoginActivity.class);
-//                registerIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                startActivity(registerIntent);
+                Intent registerIntent = new Intent(getApplicationContext(), LoginActivity.class);
+                registerIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(registerIntent);
                 dialog.dismiss();
             }
         });
