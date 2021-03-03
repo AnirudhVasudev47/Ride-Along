@@ -12,5 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:textColorHint">#97DCCFCF</item>
+
+        <item name="android:windowAnimationStyle">@style/custom_dialog_animation</item>
+
+        <item name="android:windowContentTransitions">true</item>
     </style>
 </resources>

@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#f7931e</color>
+    <color name="colorPrimaryDark">#eb8105</color>
+    <color name="colorSecondary">#42355E</color>
+    <color name="helmetConnected">#056706</color>
+    <color name="helmetNotConnected">#980404</color>
+    <color name="darkGrey">#434141</color>
+    <color name="materialBlack">#121212</color>
+    <color name="backgroundBlackLogin">#666666</color>
 </resources>
